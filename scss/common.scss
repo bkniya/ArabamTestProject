@@ -1,0 +1,52 @@
+﻿@import "colors.scss";
+@import "global.scss";
+
+#fullSiteWrapper {
+    width: 800px;
+    margin: auto;
+    padding-bottom:50px;
+
+    .pageTitle {
+        padding-top: 50px;
+
+        h1 {
+            font-size: 3em;
+            font-weight: 800;
+            color: #141212;
+        }
+
+        .pageDescription {
+            padding-top: 25px;
+            padding-bottom:15px;
+            h4 {
+                font-size: 1em;
+                font-weight: 400;
+                color: #686565;
+            }
+        }
+    }
+}
+
+
+@media all and (max-width: $mobile-width-large) {
+    #fullSiteWrapper {
+        width: 100%;
+        min-width:320px;
+        padding: 0 25px;
+    }
+
+}
+
+@media all and (min-width: $tablet-vertical-width-small) and (max-width: $tablet-vertical-width-large) {
+    #fullSiteWrapper {
+        width: 700px;
+        margin: auto;
+    }
+}
+
+@media all and (min-width: $tablet-horizontal-width-small) and (max-width: $tablet-horizontal-width-large) {
+    #fullSiteWrapper {
+        width: 800px;
+        margin: auto;
+    }
+}

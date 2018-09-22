@@ -1,0 +1,17 @@
+.news .newsImage {
+  width: 100%;
+  height: auto;
+  padding: 5px;
+  border: 1px dashed #ccc;
+  border-radius: 5px;
+}
+.news h2 {
+  color: #000;
+  z-index: 3;
+  font-size: 2em;
+  margin-top: 50px;
+}
+.news p {
+  font-size: 1em;
+  margin-top: 30px;
+}

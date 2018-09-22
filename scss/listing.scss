@@ -1,0 +1,116 @@
+﻿@import "colors.scss";
+@import "global.scss";
+
+.promotedNews {
+    .newsItem {
+        width: 100%;
+        display: block;
+
+        .newsImage {
+            background-color: $promotedNews;
+            width: 100%;
+            height: auto;
+        }
+
+        h2 {
+            color: $newsTitle;
+            z-index: 3;
+            font-size: 2em
+        }
+    }
+}
+
+.newsList {
+    margin-top: 50px;
+    font-size: 0;
+
+    .newsItem {
+        width: 250px;
+        height: 200px;
+        display: inline-block;
+        margin-left: 25px;
+        margin-bottom: 5px;
+
+        &:nth-child(3n + 4), &:first-child {
+            margin-left: 0
+        }
+
+        .newsImage {
+            background-color: #ccc;
+            width: 250px;
+            height: 200px;
+        }
+
+        h3 {
+            color: $newsTitle;
+            z-index: 3;
+            font-size: 16px;
+        }
+    }
+}
+
+.newsDescription {
+    position: absolute;
+    bottom: 0;
+    min-height: 50px;
+    width: 100%;
+
+    h3, h2 {
+        padding: 5px 10px;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        background-color: $overlay;
+        opacity: 0.4;
+        width: 100%;
+        height: 100%;
+        z-index: 1
+    }
+}
+
+@media all and (max-width: $mobile-width-large) {
+    .newsList {
+       
+        margin-bottom: 5px;
+
+        .newsItem {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-left: 0px;
+
+
+            .newsImage {
+                background-color: #ccc;
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+
+@media all and (min-width: $tablet-vertical-width-small) and (max-width: $tablet-vertical-width-large) {
+    .newsList {
+        margin-bottom: 5px;
+
+        .newsItem {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-left: 0px;
+
+
+            .newsImage {
+                background-color: #ccc;
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+
+@media all and (min-width: $tablet-horizontal-width-small) and (max-width: $tablet-horizontal-width-large) {
+
+}

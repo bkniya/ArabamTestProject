@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Arabam.com</title>
+    <link href="styles/css/reset.css" rel="stylesheet" />
+    <link href="styles/css/common.css" rel="stylesheet" />
+    <link href="styles/css/listing.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/0.12.16/vue.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div id="fullSiteWrapper">
+        <div class="pageTitle">
+            <h1> Arabam Haberler</h1>
+            <div class="pageDescription">
+                <h4>Haberler Onem sirasina gore listeleniyor!</h4>
+            </div>
+        </div>
+        <div id="promotedNews" class="promotedNews">
+            <a href="newsDetail.html?newsId={{id}}" class="newsItem" v-repeat="promoteds">
+                <img src="{{image}}" class="newsImage" />
+                <div class="newsDescription">
+                    <h2>{{title}}</h2>
+                    <div class="overlay"></div>
+                </div>
+            </a>
+        </div>
+        <div id="newsList" class="newsList">
+            <a href="newsDetail.html?newsId={{id}}" class="newsItem"  v-repeat="items" >
+                <img src="{{image}}" class="newsImage" />
+                <div class="newsDescription">
+                    <h3>{{title}}</h3>
+                    <div class="overlay"></div>
+                </div>
+            </a>
+
+        </div>
+    </div>
+ 
+
+    <script src="scripts/app.js"></script>
+</body>
+</html>

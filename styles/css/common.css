@@ -1,0 +1,42 @@
+#fullSiteWrapper {
+  width: 800px;
+  margin: auto;
+  padding-bottom: 50px;
+}
+#fullSiteWrapper .pageTitle {
+  padding-top: 50px;
+}
+#fullSiteWrapper .pageTitle h1 {
+  font-size: 3em;
+  font-weight: 800;
+  color: #141212;
+}
+#fullSiteWrapper .pageTitle .pageDescription {
+  padding-top: 25px;
+  padding-bottom: 15px;
+}
+#fullSiteWrapper .pageTitle .pageDescription h4 {
+  font-size: 1em;
+  font-weight: 400;
+  color: #686565;
+}
+
+@media all and (max-width: 767px) {
+  #fullSiteWrapper {
+    width: 100%;
+    min-width: 320px;
+    padding: 0 25px;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  #fullSiteWrapper {
+    width: 700px;
+    margin: auto;
+  }
+}
+@media all and (min-width: 1024px) and (max-width: 1199px) {
+  #fullSiteWrapper {
+    width: 800px;
+    margin: auto;
+  }
+}

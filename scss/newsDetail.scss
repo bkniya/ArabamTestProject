@@ -1,0 +1,25 @@
+﻿@import "colors.scss";
+
+.news {
+
+
+    .newsImage {
+        width: 100%;
+        height: auto;
+        padding: 5px;
+        border: 1px dashed $promotedNews;
+        border-radius: 5px;
+    }
+
+    h2 {
+        color: $newsTitleBlack;
+        z-index: 3;
+        font-size: 2em;
+        margin-top: 50px
+    }
+
+    p {
+        font-size: 1em;
+        margin-top: 30px
+    }
+}
